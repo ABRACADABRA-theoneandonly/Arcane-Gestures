@@ -1,0 +1,6 @@
+{
+  "name": "Arcane Gestures: Spellbound Realm Defender",
+  "description": "Immersive camera-driven gesture spellcasting game using MediaPipe Hands AI and P5.JS animation. Defend fantasy worlds against zombie hordes with real hand magic and competitive geographic leaderboards.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

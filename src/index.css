@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom glow and atmosphere utilities for P5 canvas & game HUD */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+@keyframes rune-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-rune-spin {
+  animation: rune-spin 18s linear infinite;
+}
+
+.glow-flame {
+  filter: drop-shadow(0 0 12px rgba(249, 115, 22, 0.6));
+}
+
+.glow-water {
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.6));
+}
+
+.glow-lightning {
+  filter: drop-shadow(0 0 14px rgba(168, 85, 247, 0.7));
+}
+
+.glow-shield {
+  filter: drop-shadow(0 0 14px rgba(234, 179, 8, 0.6));
+}
